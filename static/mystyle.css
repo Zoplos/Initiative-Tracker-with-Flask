@@ -1,0 +1,88 @@
+body{
+    /* background-color: #401163; */
+    background-image: linear-gradient( #401163,#2e0a49); 
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+h1{
+    color:antiquewhite;
+    padding-top: 4em;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    padding-bottom: 1em;
+}
+
+.inputs {
+    font-family:'Montserrat', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+label{
+    color: antiquewhite;
+}
+.initclass{
+    width: 100px;
+}
+input{
+    text-align: center;
+    background: transparent;
+    /* background-color: #401163; */
+    color: rgb(236, 166, 53);
+    border:#401163;
+}
+.initclass{
+    width: 100px;
+}
+.submitbtn{
+    background-color: rgb(209, 142, 34);
+    color: black;
+    border-style:hidden;
+    margin-left: 50px;
+}
+
+.results{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    font-family:'Montserrat', sans-serif;
+    color: rgb(236, 166, 53);
+    
+}
+th{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    color: antiquewhite;
+}
+td{
+    color: antiquewhite;
+    padding-bottom: 10px;
+}
+.gold{
+    color: rgb(209, 142, 34);
+}
+.clear{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.clearbtn{
+    background-color: rgb(209, 142, 34);
+    color: rgb(24, 24, 24);
+    border-style:hidden;
+    font-family:'Montserrat', sans-serif;
+}
+.clearbtn:hover{
+    background-color: rgb(255, 194, 51);
+}
+.submitbtn:hover{
+    background-color: rgb(255, 194, 51);
+}
