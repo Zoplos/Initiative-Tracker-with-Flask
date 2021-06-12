@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block datablock %}
+       
+{% for x in inputs %}
+        <tr>
+                <td class="gold">{{x.roll}}</td>
+                <td>{{x.name}}</td>
+                <td><div contenteditable>{{x.hp}}</div></td>
+                <td class="gold">{{x.ac}}</td>
+        </tr>
+{% endfor %}
+
+{% endblock %}
