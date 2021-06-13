@@ -86,3 +86,6 @@ td{
 .submitbtn:hover{
     background-color: rgb(255, 194, 51);
 }
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}

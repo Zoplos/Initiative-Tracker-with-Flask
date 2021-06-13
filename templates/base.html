@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="icon" href="https://img.icons8.com/dusk/64/000000/year-of-dragon.png">
+  <!-- <script defer src="{{ url_for('static', filename='validation.js') }}"></script> -->
 </head>
 
 <body>
@@ -33,15 +34,15 @@
     {% endblock %}
   </div>
   <div class="inputs">
-    <form action="/data" method="POST">
-      <label for="initiative">Initiative:</label>
-      <input class="initclass" type="text" name="init" id="init">
+    <form id="form" action="/data" method="POST">
+      <label for="init">Initiative:</label>
+      <input class="initclass" type="number" name="init" id="init" required>
       <label for="name">Name:</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" required>
       <label for="hp">HP:</label>
-      <input class="initclass" type="text" name="hp" id="hp">
+      <input class="initclass" type="number" name="hp" id="hp" required>
       <label for="ac">Armor Class:</label>
-      <input class="initclass" type="text" name="ac" id="ac">
+      <input class="initclass" type="number" name="ac" id="ac" required>
       <input class="submitbtn" type="submit" value="Submit">
     </form>
   </div>
@@ -58,7 +59,7 @@
     </table>
   </div>
   <div class="clear">
-    <form  action="/clear" method="POST">
+    <form action="/clear" method="POST">
       <input class="clearbtn" type="submit" value="Clear">
     </form>
   </div>

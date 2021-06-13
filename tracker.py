@@ -1,6 +1,5 @@
 from flask import Flask,render_template,request,redirect
 from markupsafe import escape
-import numpy as np
 import operator
 
 app = Flask(__name__)
@@ -24,7 +23,6 @@ def hello(name=None):
 @app.route('/data/', methods = ['POST', 'GET'])
 def data():
     if request.method == 'POST':
-        # form_data = request.form
         roll = int(request.form['init'])
         name = request.form['name']
         hp = int(request.form['hp'])
@@ -32,7 +30,6 @@ def data():
         inputs.append(Character(roll,name,hp,ac))
         sorted_inputs = sorted(inputs, key=operator.attrgetter("roll"))
         sorted_inputs = reversed(sorted_inputs)
-        # return render_template('data.html',form_data=form_data)
         return render_template('data.html',inputs=sorted_inputs)
 
 @app.route('/clear', methods = ['POST', 'GET'])
