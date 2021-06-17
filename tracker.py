@@ -22,6 +22,8 @@ def hello(name=None):
 
 @app.route('/data/', methods = ['POST', 'GET'])
 def data():
+    if request.method == 'GET':
+        return render_template("base.html") 
     if request.method == 'POST':
         roll = int(request.form['init'])
         name = request.form['name']
@@ -32,7 +34,7 @@ def data():
         sorted_inputs = reversed(sorted_inputs)
         return render_template('data.html',inputs=sorted_inputs)
 
-@app.route('/clear', methods = ['POST', 'GET'])
+@app.route('/clear/', methods = ['POST', 'GET'])
 def clear():
     inputs.clear()
     return render_template("base.html") 
